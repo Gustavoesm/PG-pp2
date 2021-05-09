@@ -23,11 +23,18 @@ for iterator = 0:9
 	img_compl = imcomplement(img_binary);
 
 	### SCALAR DESCRIPTORS ###
+	# generate text file path
 	output_url = strcat("output/", num2str(iterator), "-scalar-description.txt");
+	# open file in (over)write mode
 	file = fopen(output_url, "w");
+	# save scalars to "props" struct
 	props = regionprops(img_compl, "Area", "EulerNumber", "Eccentricity", "Perimeter");
 	props.("Compactness") = props.("Perimeter") / props.("Area");
+	# remove undesired field "Perimeter" from props struct
+	props = rmfield(props, "Perimeter");
+	# print struct to file
 	fdisp(file, props);
+	# close file
 	fclose(file);
 
 	### SKELETON ###
