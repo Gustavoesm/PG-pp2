@@ -22,28 +22,9 @@ for iterator = 0:9
 	# transform image and gets it's negative
 	img_compl = imcomplement(img_binary);
 
-	### SCALAR DESCRIPTORS ###
-	# generate text file path
-	output_url = strcat("output/", num2str(iterator), "-scalar-description.txt");
-	# open file in (over)write mode
-	file = fopen(output_url, "w");
-	# save scalars to "props" struct
-	props = regionprops(img_compl, "Area", "EulerNumber", "Eccentricity", "Perimeter");
-	props.("Compactness") = props.("Perimeter") / props.("Area");
-	# remove undesired field "Perimeter" from props struct
-	props = rmfield(props, "Perimeter");
-	# print struct to file
-	fdisp(file, props);
-	# close file
-	fclose(file);
-
-	### SKELETON ###
-	# skeleton transformation
-	img_skel = bwmorph(img_compl, 'skel', Inf);
-	# generate an output path and name to the skeleton
-	output_url = strcat("output/", num2str(iterator), "-skeleton.jpg");
-	# write image down to disk
-	imwrite(img_skel, output_url);
+	### DESCRIPTIONS ###
+	scalar(img_compl, iterator);
+	skeleton(img_compl, iterator);
 endfor
 
 %{ 
