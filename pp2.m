@@ -22,9 +22,10 @@ for iterator = 0:9
 	# transform image and gets it's negative
 	img_compl = imcomplement(img_binary);
 
-	### DESCRIPTIONS ###
+	### DESCRIPTORS ###
 	scalar(img_compl, iterator);
 	skeleton(img_compl, iterator);
+	assinatura(img_compl, iterator);
 endfor
 
 %{ 
