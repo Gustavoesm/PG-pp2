@@ -23,10 +23,12 @@ for iterator = 0:9
 	img_compl = imcomplement(img_binary);
 
 	### SCALAR DESCRIPTORS ###
+	output_url = strcat("output/", num2str(iterator), "-scalar-description.txt");
+	file = fopen(output_url, "w");
 	props = regionprops(img_compl, "Area", "EulerNumber", "Eccentricity", "Perimeter");
 	props.("Compactness") = props.("Perimeter") / props.("Area");
-	disp(props);
-	continue;
+	fdisp(file, props);
+	fclose(file);
 
 	### SKELETON ###
 	# skeleton transformation
