@@ -20,6 +20,6 @@ function poligonal_approximation(img, iterator)
             plot(col, row,'rx','LineWidth',2);
         end
     end
-	output_url = strcat("output/", num2str(iterator), "-poligonal-approx.jpg");
+	output_url = strcat("output/poligonal/", num2str(iterator), "-poligonal-approx.jpg");
 	print (fig, output_url, "-djpg");
 end

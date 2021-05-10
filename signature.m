@@ -1,4 +1,4 @@
-function assinatura(img, iterator)
+function signature(img, iterator)
 
 	%reconhece e destaca as bordas, plota o número do objeto no centróide
 	[B1,L1] = bwboundaries(img);
@@ -12,10 +12,10 @@ function assinatura(img, iterator)
 	%subplot(subplotrow,round(N1/subplotrow),cnt);
 
 	plot(th,r,'.');
-	axis([-pi pi 0 50]);
+	axis([-pi pi 0 100]);
 	xlabel('radiano');ylabel('r');
 	title(strcat(['Numero '], num2str(iterator)));
 
-	output_url = strcat("output/", num2str(iterator), "-signature.jpg");
+	output_url = strcat("output/signature/", num2str(iterator), "-signature.jpg");
 	print (fig, output_url, "-djpg");
 endfunction

@@ -25,7 +25,7 @@ for iterator = 0:9
 	### DESCRIPTORS ###
 	scalar(img_compl, iterator);
 	skeleton(img_compl, iterator);
-	assinatura(img_compl, iterator);
+	signature(img_compl, iterator);
 	poligonal_approximation(img_compl, iterator);
 	chain_code(imcomplement(img_src), iterator);
 endfor

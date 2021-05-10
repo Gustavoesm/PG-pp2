@@ -1,7 +1,7 @@
 function scalar(img, iterator)
 
 	# generate text file path
-	output_url = strcat("output/", num2str(iterator), "-scalar-description.txt");
+	output_url = strcat("output/scalar/", num2str(iterator), "-scalar-description.txt");
 	# open file in (over)write mode
 	file = fopen(output_url, "w");
 	# save scalars to "props" struct

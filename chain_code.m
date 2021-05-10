@@ -7,7 +7,7 @@ function chain_code(img, iterator)
     grid = 10;
 
     # open output file
-    output_url = strcat("output/", num2str(iterator), "-chain-code.txt");
+    output_url = strcat("output/chaincode/", num2str(iterator), "-chain-code.txt");
     file = fopen(output_url,'w');
 
     for k=1:boundarycount
