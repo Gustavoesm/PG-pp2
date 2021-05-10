@@ -1,5 +1,7 @@
 # Trabalho de Processamento Grafico
 
+Prof Siovani, recomendamos a visualização desse arquivo markdown pelo github (https://github.com/Gustavoesm/PG) para melhor aproveitar o relatório com os links.
+
 ## Grupo 11
 ### Integrantes:
 - Gabriel Peres de Andrade 726517
@@ -25,7 +27,7 @@ Para o número 0, o grupo identificou como ideal para sua descrição o [método
 ##### 1
 Para o número 1, o grupo concluiu que o algoritmo mais adequado seria o de [código de cadeia](chain_code.m), devido a poucas mudanças mudanças de direção e alta incidência de valores verticais. [código de cadeia gerado](output/chaincode/1-chain-code.txt) 
 ##### 2
-Para o número 2, a conclusão foi de que o mais adequado seria o [esqueleto do número](skeleton.m), visto que a base gerada é fiel ao número original. [esqueleto gerado](output/chaincode/2-skeleton.jpg)
+Para o número 2, a conclusão foi de que o mais adequado seria o [esqueleto do número](skeleton.m), visto que a base gerada é fiel ao número original. [esqueleto gerado](output/skeleton/2-skeleton.jpg)
 ##### 3
 O número 3 é outro número que pode ser bem representado pelo [método de assinatura](signature.m), dada sua simetria gerada pelo eixo horizontal. [assinatura gerada](output/signature/3-signature.jpg)
 ##### 4
