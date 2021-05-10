@@ -1,0 +1,6 @@
+  scalar structure containing the fields:
+
+    Area =  10786
+    EulerNumber = 0
+    Eccentricity =  0.87953
+    Compactness =  30.092
