@@ -1,10 +1,6 @@
 function chain_code(img, iterator)
 
     img = rgb2gray(img);
-
-    Edges = edge(img, 'Sobel');
-
-    hold on
     
     b = bwboundaries(img);
     [boundarycount, asdf] = size(b);
@@ -54,13 +50,10 @@ function chain_code(img, iterator)
                 end
             end
         end;
-        fprintf(file, 'Código linha %d: ', k);
         for i = 1:j
             # print chain code to file
             fprintf(file, '%d', array(i));
         end;
-        fprintf(file, '\n');
     end;
     fclose(file);
-    hold off
 endfunction
