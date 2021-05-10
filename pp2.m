@@ -27,6 +27,7 @@ for iterator = 0:9
 	skeleton(img_compl, iterator);
 	assinatura(img_compl, iterator);
 	poligonal_approximation(img_compl, iterator);
+	chain_code(imcomplement(img_src), iterator);
 endfor
 
 %{ 
