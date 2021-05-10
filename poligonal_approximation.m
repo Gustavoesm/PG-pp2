@@ -1,7 +1,7 @@
 function poligonal_approximation(img, iterator)
 
     s=size(img);
-	fig = figure;
+	fig = figure('visible','off');
     for row = 2:55:s(1)
         for col=1:s(2)
             if img(row,col), break;

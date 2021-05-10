@@ -4,7 +4,7 @@ function assinatura(img, iterator)
 	[B1,L1] = bwboundaries(img);
 
 	%plota a função assinatura
-	fig = figure;
+	fig = figure('visible','off');
 
 	boundary1 = B1{1};
 	[th, r]=cart2pol(boundary1(:,2)-mean(boundary1(:,2)), ...;
