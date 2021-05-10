@@ -18,12 +18,15 @@ O trabalho consiste em analizar os número 0-9 e encontrar o algoritmo adequado 
 
 ## Números:
 # 0
+Para o número 0, o grupo identificou como ideal para sua descrição o [método de assinatura](signature.m), visto que o número 0 é perfeitamente simetrico, que faz com que sua assinatura seja bem característica. [assinatura gerada](output/signature/0-signature.jpg)
 # 1
 # 2
 # 3
+O número 3 é outro número que pode ser bem representado pelo [método de assinatura](signature.m), dada sua simetria gerada pelo eixo horizontal. [assinatura gerada](output/signature/3-signature.jpg)
 # 4
 # 5
 # 6
 # 7
 # 8
+O número 8 tem uma característica única se comparado aos outros, pois é o único que apresenta em suas [medidas escalares](scalar.m) o número de euler como -1, devido às suas duas cavidades interiores. [medidas escalares geradas](output/scalar/8-scalar-description.txt)
 # 9
