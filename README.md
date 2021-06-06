@@ -1,4 +1,4 @@
-# Trabalho de Processamento Grafico
+# Trabalho Parcial 2 de Processamento Grafico
 
 Prof Siovani, recomendamos a visualização desse arquivo markdown pelo github (https://github.com/Gustavoesm/PG) para melhor aproveitar o relatório com os links.
 
